@@ -81,6 +81,8 @@ main{
         display: flex;
         flex-direction: row;
         margin-top: 10px;
+        align-items: center;
+        justify-items: center;
     }
 }
 
@@ -99,5 +101,7 @@ button{
         height: 40px;
         background-color: rgb(223, 233, 243, 0.5);
         backdrop-filter: blur(10px);
+        align-items: center;
+        justify-items: center; 
     }
 }
