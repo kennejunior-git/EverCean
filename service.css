@@ -36,7 +36,7 @@ main{
 }
 
 .bottom{
-    transform: translateY(-20%);
+    transform: translateY(-7%);
     background-color: white;
     border: 1px solid;
     margin-left: 6%;
@@ -47,7 +47,7 @@ main{
 
 .service{
     background-color: rgb(103, 255, 92, 0.9);
-    height: 250px;
+    height: 15rem;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -55,7 +55,6 @@ main{
     align-items: center;
     border: 1px solid;
     border-radius: 10px;
-    transform: translateY(-10%);
 }
 
 @media(max-width:666px){
