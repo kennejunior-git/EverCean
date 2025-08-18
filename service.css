@@ -76,13 +76,23 @@ main{
     border-radius: 5px;
 }
 
+.right{
+    display: flex;
+    flex-direction: column;
+}
 @media(max-width:666px){
-    .left,.rigth{
+    .left{
         display: flex;
         flex-direction: row;
         margin-top: 10px;
         align-items: center;
         justify-items: center;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
     }
 }
 
