@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Services</title>
     <link rel="stylesheet" href="service.css">
     <link rel="stylesheet" href="navbar.css">
 </head>
@@ -23,7 +23,7 @@
             </ul>
 
             <ul class="sidebar">
-                <li onclick=" hideSidebar()"><img class="menu-remove" src="Img/cancel.png" alt=""></li>
+                <li onclick=" hideSidebar() "><img class="menu-remove" src="Img/cancel.png" alt=""></li>
                 <li><a href="index.html"><span>Home</span></a></li>
                 <li><a href="Service.html"><span>Services</span></a></li>
                 <li><a href="contact.html"><span>Contact</span></a></li>
@@ -62,7 +62,7 @@
                             Regular waste collection for your home.
                         </p>
 
-                        <button>
+                        <button type="button" class="booknow" onclick="showOrder()">
                             Book.Now
                         </button>
                     </div>
@@ -121,6 +121,39 @@
             </div>
        </div>
 
+              <!-- Booking page-->
+        <div class="order">
+            <h2>Book a Pickup</h2>
+            <p>Schedule a pickup by providing your details below.</p>
+            <div class="booking">
+                <label for="name"> Waste qauntity</label>
+                <select name="Waste Qauntity" id="" class="select">
+                    <option value="text"> Small (20kg - 50kg)</option>
+                    <option value="text"> Meduim (50kg - 150kg)</option>
+                    <option value="text"> Large (150kg and above)</option>
+                </select>
+            </div>
+
+            <div class="booking">
+                <label for="name"> Waste Type</label>
+                <select name="Waste Qauntity" id="" class="select">
+                    <option value="househould"> Household</option>
+                    <option value="plastic"> Plastic</option>
+                    <option value="glass"> Glass</option>
+                    <option value="organic">Organic</option>
+                </select>
+            </div>
+
+            <div class="booking">
+                <label for="name" > Pickup Date</label>
+                <input type="date" name="" id="" class="select">
+            </div>
+
+            <div class="booking" >
+                <button class="submit" onclick="hideOrder()">Submit</button>
+            </div>
+
+        </div>
     </main>
 
     <footer>
@@ -136,6 +169,16 @@
         function hideSidebar(){
             const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'none'
+        }
+
+        function showOrder(){
+            const order = document.querySelector('.order');
+            order.style.display = 'flex';
+        }
+
+        function hideOrder(){
+            const order = document.querySelector('.order');
+            order.style.display = 'none';
         }
     </script>
 </body>
