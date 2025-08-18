@@ -1,0 +1,10 @@
+  /* Background style for the welcome section */
+    #welcome {
+      min-height: 100vh;
+      background: linear-gradient(to bottom, #87CEEB 0%, #ffffff 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
