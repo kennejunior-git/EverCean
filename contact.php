@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['email'])){
+        header("location: login.php");
+        exit(); 
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,40 +14,41 @@
     <title>Contact us</title>
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="navbar.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-            <header>
+     <header>
             <div class="left-section">
                 <img class="logo" src="Img/logo.jpeg" alt="">
                 <label class="label" for="">EverClean</label>
             </div>
 
             <ul class="middle-section">
-                <li><a href="index.html"><span>Home</span></a></li>
-                <li><a href="Service.html"><span>Services</span></a></li>
-                <li><a href="contact.html"><span>Contact</span></a></li>
-                <li><a href="feedback.html"><span>Feedbacks</span></a></li>
-                <li><a href="about.html"><span>About</span></a></li>
+                <li><a href="index.php"><span>Home</span></a></li>
+                <li><a href="dashboard.php"><span>Dashboard</span></a></li>
+                <li><a href="Service.php"><span>Services</span></a></li>
+                <li><a href="contact.php"><span>Contact</span></a></li>
+                <li><a href="feedback.php"><span>Feedbacks</span></a></li>
+                <li><a href="about.php"><span>About</span></a></li>
             </ul>
 
             <ul class="sidebar">
                 <li onclick=" hideSidebar()"><img class="menu-remove" src="Img/cancel.png" alt=""></li>
-                <li><a href="index.html"><span>Home</span></a></li>
-                <li><a href="Service.html"><span>Services</span></a></li>
-                <li><a href="contact.html"><span>Contact</span></a></li>
-                <li><a href="feedback.html"><span>Feedbacks</span></a></li>
-                <li><a href="about.html"><span>About</span></a></li>
+                <li><a href="index.php"><span>Home</span></a></li>
+                <li><a href="dashboard.php"><span>Dashboard</span></a></li>
+                <li><a href="Service.php"><span>Services</span></a></li>
+                <li><a href="contact.php"><span>Contact</span></a></li>
+                <li><a href="feedback.php"><span>Feedbacks</span></a></li>
+                <li><a href="about.php"><span>About</span></a></li>
             </ul>
 
             <div class="right-section">
-                <button ><a href="">Join</a></button>
+                <button ><a href="login.php">Join</a></button>
                 <img onclick="
                 showSidebar()
             " class="menu" src="Img/menu.png" alt="">
             </div>
-    </header>
-
     </header>
 
     <main>
@@ -67,19 +76,19 @@
             </div>
 
             <div class="right">
-                <div >
+                <div class="contact-info">
                      <img class="one" src="Img/phone.jpeg" alt="">
-                     <span>+237-676-434-432</span>
+                     <span>+237 676-434-432</span>
                 </div>
 
-                <div>
+                <div  class="contact-info">
                     <img src="Img/location.jpeg" alt="">
                     <span>everclean@gmail.com</span>
                 </div>
 
-                <div>
+                <div  class="contact-info">
                     <img class="three" src="Img/email.jpeg" alt="">
-                    <span>1234 Cameroun,Yaounde,Obili </span>
+                    <span>Cameroun,Yaounde,Obili </span>
                 </div>
             </div>
        </div>

@@ -1,0 +1,122 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-family: "Poppins", serif;
+}
+
+main{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+@media(max-width:666px){
+    main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15%;
+    }
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.logo{
+    width: 20%;
+    border-radius: 50%;
+    border: 1px solid green;
+    box-shadow: 1px 1px 3px;
+}
+
+.label{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    font-weight: bold;
+    color: green;
+     border: 1px solid green;
+    box-shadow: 1px 1px 1px;
+    font-size: 1.51rem;
+    margin-left: 0%;
+}
+.container{
+    margin:0 15px;
+}
+
+form{
+    width: 86%;
+    max-width: 450px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+form.active{
+    display: block;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+input, select{
+    width: 80%;
+    padding: 12px;
+    background-color: rgb(244, 247, 244);
+    border: 6px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+button{
+    width: 80%;
+    padding: 12px;
+    background:rgba(25, 235, 10, 0.932);
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+button:hover{
+    background:rgb(103, 255, 92, 0.9);
+}
+
+a {
+    color: rgb(103, 255, 92, 0.9);
+    text-decoration: none;
+}
+
+.label{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    font-weight: bold;
+    color: green;
+     border: 1px solid green;
+    box-shadow: 1px 1px 1px;
+    font-size: 1.08rem;
+}
+
+
+.error-message{
+    padding: 12px;
+    background: #89f87be3;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #1f1d1d;
+    text-align: center;
+    margin-bottom: 20px;
+}

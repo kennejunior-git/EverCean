@@ -1,38 +1,49 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['email'])){
+        header("location: login.php");
+        exit(); 
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EverClean</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
-    <header>
+     <header>
             <div class="left-section">
                 <img class="logo" src="Img/logo.jpeg" alt="">
                 <label class="label" for="">EverClean</label>
             </div>
 
             <ul class="middle-section">
-                <li><a href="index.html"><span>Home</span></a></li>
-                <li><a href="Service.html"><span>Services</span></a></li>
-                <li><a href="contact.html"><span>Contact</span></a></li>
-                <li><a href="feedback.html"><span>Feedbacks</span></a></li>
-                <li><a href="about.html"><span>About</span></a></li>
+                <li><a href="index.php"><span>Home</span></a></li>
+                <li><a href="dashboard.php"><span>Dashboard</span></a></li>
+                <li><a href="Service.php"><span>Services</span></a></li>
+                <li><a href="contact.php"><span>Contact</span></a></li>
+                <li><a href="feedback.php"><span>Feedbacks</span></a></li>
+                <li><a href="about.php"><span>About</span></a></li>
             </ul>
 
             <ul class="sidebar">
                 <li onclick=" hideSidebar()"><img class="menu-remove" src="Img/cancel.png" alt=""></li>
-                <li><a href="index.html"><span>Home</span></a></li>
-                <li><a href="Service.html"><span>Services</span></a></li>
-                <li><a href="contact.html"><span>Contact</span></a></li>
-                <li><a href="feedback.html"><span>Feedbacks</span></a></li>
-                <li><a href="about.html"><span>About</span></a></li>
+                <li><a href="index.php"><span>Home</span></a></li>
+                <li><a href="dashboard.php"><span>Dashboard</span></a></li>
+                <li><a href="Service.php"><span>Services</span></a></li>
+                <li><a href="contact.php"><span>Contact</span></a></li>
+                <li><a href="feedback.php"><span>Feedbacks</span></a></li>
+                <li><a href="about.php"><span>About</span></a></li>
             </ul>
 
             <div class="right-section">
-                <button ><a href="">Join</a></button>
+                <button ><a href="login.php">Join</a></button>
                 <img onclick="
                 showSidebar()
             " class="menu" src="Img/menu.png" alt="">
@@ -77,7 +88,7 @@
 
             <div class="book-now">
                 <p>Ready for cleaner surroundings? Let's get started</p>
-                <button>Book Now</button>
+                <a href="Service.html"><button>Book Now</button></a>
             </div>
         </div>
     </main>
